@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Delivery de Baterías para Autos en Lima | BATERIAZ</title>
+  <meta name="description" content="Encuentra la batería adecuada para tu auto con asesoría especializada, instalación y garantía. Contacta con BATERIAZ en Lima y Callao.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#171717">
+  <link rel="canonical" href="https://bateriaz.online/">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:site_name" content="BATERIAZ">
+  <meta property="og:title" content="Delivery de Baterías para Autos en Lima | BATERIAZ">
+  <meta property="og:description" content="Asesoría especializada para elegir la batería adecuada para tu vehículo.">
+  <meta property="og:url" content="https://bateriaz.online/">
+  <meta property="og:image" content="https://bateriaz.online/assets/img/fondo-bateriaz.webp">
+
+  <style>
+    [hidden] {
+      display: none !important;
+    }
+
+    .landing-cta {
+      display: flex;
+      justify-content: center;
+      margin: 28px auto 0;
+      padding: 0 16px;
+    }
+
+    .landing-cta .button {
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .other-brands-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 20px;
+      min-height: 110px;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      box-sizing: border-box;
+    }
+
+    .other-brands-link strong {
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .other-brands-link span {
+      color: #16834a;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .payment-section {
+      background: #f5f5f5;
+      text-align: center;
+    }
+
+    .payment-description {
+      max-width: 680px;
+      margin: 12px auto 24px;
+      line-height: 1.7;
+    }
+
+    .payment-methods {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .payment-method {
+      background: #fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 12px;
+      padding: 18px 12px;
+      font-weight: 700;
+      box-sizing: border-box;
+    }
+
+    .district-selector {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+
+    .district-selector .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 140px;
+      min-height: 54px;
+      padding: 14px 24px;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 700;
+      text-decoration: none;
+      text-align: center;
+      box-sizing: border-box;
+      line-height: 1.3;
+    }
+
+    /* Botón Callao: fondo oscuro, texto blanco y borde dorado */
+    .district-selector .button--call {
+      background: #171717 !important;
+      color: #ffffff !important;
+      border: 2px solid #f2b900 !important;
+    }
+
+    .district-selector .button--call:hover {
+      background: #292929 !important;
+      color: #ffffff !important;
+    }
+
+    .districts-panel {
+      margin-top: 20px;
+    }
+
+    .districts-panel h3 {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .districts-grid a {
+      text-decoration: none;
+    }
+
+    /* Ajustes para el bloque de contacto */
+    .contact-section {
+      padding: 40px 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .contact-section h2,
+    .contact-section p {
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-section .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 360px;
+      min-height: 54px;
+      margin: 24px auto 16px;
+      padding: 14px 18px;
+      box-sizing: border-box;
+      text-align: center;
+      white-space: normal;
+    }
+
+    /* Ajustes para el pie de página */
+    .site-footer {
+      padding: 28px 16px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .site-footer p,
+    .site-footer a {
+      line-height: 1.7;
+      overflow-wrap: anywhere;
+    }
+
+    @media (min-width: 600px) {
+      .payment-methods {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .district-selector {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .district-selector .button {
+        width: 100%;
+        max-width: 360px;
+      }
+
+      .contact-section h2 {
+        font-size: 25px;
+        line-height: 1.25;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <a href="/" aria-label="BATERIAZ - Inicio">
+      <img
+        src="/assets/img/logo-bateriaz.webp"
+        alt="BATERIAZ - Baterías automotrices"
+        width="180"
+        height="60"
+      >
+    </a>
+  </header>
+
+  <main>
+
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero" id="inicio">
+      <p class="hero__eyebrow">VENTA · ASESORÍA · INSTALACIÓN</p>
+
+      <h1>Delivery de Baterías para Autos en Lima</h1>
+
+      <p class="hero__description">
+        Encuentra la batería adecuada para tu vehículo
+        con asesoría especializada, instalación y garantía.
+      </p>
+
+      <div class="hero__actions">
+        <a
+          class="button button--whatsapp"
+          href="https://wa.me/51946795133?text=Hola%2C%20quiero%20comprar%20una%20bater%C3%ADa%20para%20mi%20veh%C3%ADculo."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Consultar por WhatsApp
+        </a>
+
+        <a class="button button--call" href="tel:+51946795133">
+          Llamar al 946 795 133
+        </a>
+      </div>
+    </section>
+
+    <!-- BOTÓN PRINCIPAL DE COMPRA -->
+    <div class="landing-cta">
+      <a
+        class="button button--whatsapp"
+        href="https://wa.me/51946795133?text=Hola%2C%20quiero%20comprar%20mi%20bater%C3%ADa.%20Me%20pueden%20asesorar%3F"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar mi batería aquí
+      </a>
+    </div>
+
+    <!-- BENEFICIOS -->
+    <section class="section" id="beneficios">
+      <h2>¿Por qué elegir BATERIAZ?</h2>
+
+      <p>
+        Te ayudamos a encontrar la batería compatible
+        con tu vehículo y a conocer las opciones disponibles.
+      </p>
+
+      <div class="benefits-grid">
+        <article class="benefit-card">
+          <h3>Garantía</h3>
+          <p>12 meses de garantía, mantenimientos gratuitos durante todo el ciclo de vida de la batería.</p>
+        </article>
+
+        <article class="benefit-card">
+          <h3>Asesoría especializada</h3>
+          <p>Te guiamos para que elijas la batería correcta para tu vehículo, de acuerdo a su uso o especificaciones.</p>
+        </article>
+
+        <article class="benefit-card">
+          <h3>Instalación</h3>
+          <p>Deja todo en manos de los EXPERTOS, enviaremos a un técnico especializado para la correcta instalación de tu batería.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- MARCAS -->
+    <section class="section section--brands" id="marcas">
+      <h2>Encuentra las mejores marcas de baterías para tu vehículo</h2>
+
+      <p>
+        Consulta por disponibilidad y compatibilidad
+        de las diferentes marcas.
+      </p>
+
+      <div class="brands-grid">
+        <div class="brand-card">
+          <img src="/assets/img/marcas/topower.webp" alt="Logo de Topower" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/acdelco.webp" alt="Logo de ACDelco" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/energy-gold.webp" alt="Logo de Energy Gold" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/capsa.webp" alt="Logo de CAPSA" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/etna.webp" alt="Logo de ETNA" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/enerjet.webp" alt="Logo de Enerjet" loading="lazy">
+        </div>
+
+        <div class="brand-card">
+          <img src="/assets/img/marcas/bosch.webp" alt="Logo de Bosch" loading="lazy">
+        </div>
+
+        <!-- TARJETA PARA CONSULTAR OTRAS MARCAS -->
+        <div class="brand-card">
+          <a
+            class="other-brands-link"
+            href="https://wa.me/51946795133?text=Hola%2C%20quisiera%20consultar%20por%20otras%20marcas%20de%20bater%C3%ADas."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Consultar por otras marcas de baterías en WhatsApp"
+          >
+            <strong>¿Buscas otras marcas?</strong>
+            <span>Consultar por WhatsApp →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <h2>Venta e instalación de baterías para autos</h2>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Venta de baterías</h3>
+          <p>Consulta modelos y opciones para tu vehículo.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Instalación de baterías</h3>
+          <p>Contamos con los mejores técnicos especializados para la correcta instalación de tu batería.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Asesoría automotriz</h3>
+          <p>Somos EXPERTOS EN BATERÍAS, confia en nosotros, te guiaremos paso a paso.</p>
+        </article>
+      </div>
+
+      <div class="landing-cta">
+        <a
+          class="button button--whatsapp"
+          href="https://wa.me/51946795133?text=Hola%2C%20quiero%20comprar%20una%20bater%C3%ADa%20para%20mi%20auto."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Comprar mi batería
+        </a>
+      </div>
+    </section>
+
+    <!-- PROCESO DE COMPRA -->
+    <section class="section" id="proceso">
+      <h2>Encuentra la batería adecuada para tu vehículo</h2>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <span>01</span>
+          <h3>Indica tu vehículo</h3>
+          <p>Comparte la marca, el modelo y el año de tu auto.</p>
+        </article>
+
+        <article class="step-card">
+          <span>02</span>
+          <h3>Consulta compatibilidad</h3>
+          <p>Te orientaremos sobre las opciones disponibles.</p>
+        </article>
+
+        <article class="step-card">
+          <span>03</span>
+          <h3>Coordina tu atención</h3>
+          <p>Consulta el precio y la disponibilidad de entrega e instalación.</p>
+        </article>
+      </div>
+
+      <div class="landing-cta">
+        <a
+          class="button button--whatsapp"
+          href="https://wa.me/51946795133?text=Hola%2C%20quiero%20pedir%20mi%20bater%C3%ADa.%20Estos%20son%20los%20datos%20de%20mi%20veh%C3%ADculo%3A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pedir mi batería
+        </a>
+      </div>
+    </section>
+
+    <!-- MEDIOS DE PAGO -->
+    <section class="section payment-section" id="medios-de-pago">
+      <h2>Medios de pago</h2>
+
+      <p class="payment-description">
+        Aceptamos todas las tarjetas, Yape o Plin,
+        transferencia bancaria y efectivo.
+      </p>
+
+      <div class="payment-methods">
+        <div class="payment-method">💳 Todas las tarjetas</div>
+        <div class="payment-method">📱 Yape</div>
+        <div class="payment-method">📱 Plin</div>
+        <div class="payment-method">🏦 Transferencia</div>
+        <div class="payment-method">💵 Efectivo</div>
+      </div>
+    </section>
+
+    <!-- DISTRITOS DE ATENCIÓN -->
+    <section class="section" id="cobertura">
+      <h2>Distritos de atención de BATERIAZ</h2>
+
+      <p>
+        Selecciona Lima para ver los distritos disponibles
+        o ingresa a la página de atención de Callao.
+      </p>
+
+      <div class="district-selector">
+        <button
+          type="button"
+          class="button button--whatsapp"
+          id="btn-lima"
+          aria-expanded="false"
+          aria-controls="distritos-lima"
+        >
+          Lima
+        </button>
+
+        <a class="button button--call" href="/delivery-callao/">
+          Callao
+        </a>
+      </div>
+
+      <div class="districts-panel" id="distritos-lima" hidden>
+        <h3>Distritos de Lima</h3>
+
+        <div class="districts-grid">
+          <a href="/delivery-comas/">Comas</a>
+          <a href="/delivery-san-juan-de-lurigancho/">San Juan de Lurigancho</a>
+          <a href="/delivery-surco/">Surco</a>
+          <a href="/delivery-san-borja/">San Borja</a>
+          <a href="/delivery-surquillo/">Surquillo</a>
+          <a href="/delivery-barranco/">Barranco</a>
+          <a href="/delivery-san-isidro/">San Isidro</a>
+          <a href="/delivery-miraflores/">Miraflores</a>
+          <a href="/delivery-lince/">Lince</a>
+          <a href="/delivery-jesus-maria/">Jesús María</a>
+          <a href="/delivery-magdalena-del-mar/">Magdalena del Mar</a>
+          <a href="/delivery-los-olivos/">Los Olivos</a>
+          <a href="/delivery-san-martin-de-porres/">San Martín de Porres</a>
+          <a href="/delivery-la-victoria/">La Victoria</a>
+          <a href="/delivery-brena/">Breña</a>
+          <a href="/delivery-cercado-de-lima/">Cercado de Lima</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section" id="preguntas-frecuentes">
+      <h2>Preguntas frecuentes sobre baterías para autos</h2>
+
+      <details>
+        <summary>¿Cómo sé qué batería necesita mi vehículo?</summary>
+        <p>
+          Indica la marca, el modelo, el año y la motorización
+          para consultar qué opciones son compatibles.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿Las baterías tienen garantía?</summary>
+        <p>
+          Las baterías comercializadas cuentan con una garantía
+          de 12 meses.
+        </p>
+      </details>
+
+      <details>
+        <summary>¿El delivery tiene costo?</summary>
+        <p>
+          No, el delivery no tiene costo.
+        </p>
+      </details>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section" id="contacto">
+      <h2>¿Necesitas una batería para tu auto?</h2>
+
+      <p>
+        Contáctanos para recibir orientación
+        y consultar las opciones disponibles.
+      </p>
+
+      <a
+        class="button button--whatsapp"
+        href="https://wa.me/51946795133?text=Hola%2C%20necesito%20asesor%C3%ADa%20para%20elegir%20una%20bater%C3%ADa."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Solicitar asesoría por WhatsApp
+      </a>
+
+      <p>Teléfono: 946 795 133</p>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <p>BATERIAZ - Expertos en Baterías automotrices</p>
+    <a href="tel:+51946795133">946 795 133</a>
+    <p>Atención comercial: de 8:00 a. m. a 12:00 p. m.</p>
+    <p>© <span data-current-year>2026</span> Duo Grafico - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- FUNCIONAMIENTO DEL SELECTOR DE DISTRITOS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttonLima = document.getElementById("btn-lima");
+      const districtsLima = document.getElementById("distritos-lima");
+
+      if (buttonLima && districtsLima) {
+        buttonLima.addEventListener("click", function () {
+          const willOpen = districtsLima.hidden;
+
+          districtsLima.hidden = !willOpen;
+          buttonLima.setAttribute("aria-expanded", String(willOpen));
+
+          if (willOpen) {
+            districtsLima.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest"
+            });
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

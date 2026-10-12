@@ -1,0 +1,501 @@
+
+/* ========================================
+   BATERIAZ - ESTILOS PRINCIPALES
+   Colores: rojo, dorado, negro y blanco
+======================================== */
+
+:root {
+    --color-red: #d92332;
+    --color-red-dark: #b51d2a;
+    --color-gold: #e0b33d;
+    --color-black: #171717;
+    --color-dark: #252525;
+    --color-white: #ffffff;
+    --color-light: #f6f6f6;
+    --color-gray: #666666;
+    --color-border: #e5e5e5;
+
+    --container-width: 1120px;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-black);
+    background: var(--color-white);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 4px;
+}
+
+/* CONTENEDOR GENERAL */
+
+.site-header,
+.section,
+.site-footer {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section > *,
+.site-header > * {
+    width: 100%;
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.section h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: clamp(1.65rem, 4vw, 2.35rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.section > p {
+    color: var(--color-gray);
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 28px;
+}
+
+/* ENCABEZADO SIN MENU */
+
+.site-header {
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--color-black);
+}
+
+.site-header a {
+    width: auto;
+    max-width: 100%;
+}
+
+.site-header img {
+    width: 165px;
+    max-height: 62px;
+    object-fit: contain;
+}
+
+/* PORTADA CON FONDO BATERIAZ */
+
+.hero {
+    padding: 72px 20px 76px;
+    text-align: center;
+    color: var(--color-white);
+
+    background-image:
+        linear-gradient(
+            rgba(15, 15, 15, 0.62),
+            rgba(15, 15, 15, 0.78)
+        ),
+        url("/assets/img/fondo-bateriaz.webp");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    /* Evita que la imagen se desplace al hacer scroll */
+    background-attachment: scroll;
+}
+
+.hero__eyebrow {
+    margin: 0 0 16px;
+    color: var(--color-gold);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+}
+
+.hero h1 {
+    max-width: 850px;
+    margin: 0 auto 20px;
+    font-size: clamp(2rem, 5.5vw, 3.6rem);
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.hero__description {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #e4e4e4;
+    font-size: clamp(1rem, 2.5vw, 1.15rem);
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+/* BOTONES */
+
+.button {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 23px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 0.96rem;
+    font-weight: 700;
+    text-align: center;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button--whatsapp {
+    color: var(--color-white);
+    background: #18864b;
+}
+
+.button--whatsapp:hover {
+    background: #116d3c;
+}
+
+.button--call {
+    color: var(--color-white);
+    border-color: var(--color-gold);
+    background: transparent;
+}
+
+.button--call:hover {
+    color: var(--color-black);
+    background: var(--color-gold);
+}
+
+/* BENEFICIOS */
+
+.benefits-grid,
+.services-grid,
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+
+.benefit-card,
+.service-card,
+.step-card {
+    padding: 26px 22px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-white);
+    box-shadow: var(--shadow);
+}
+
+.benefit-card h3,
+.service-card h3,
+.step-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.15rem;
+}
+
+.benefit-card h3::before {
+    content: "";
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background: var(--color-red);
+}
+
+.benefit-card p,
+.service-card p,
+.step-card p {
+    margin: 0;
+    color: var(--color-gray);
+}
+
+/* MARCAS */
+
+.section--brands {
+    background: var(--color-light);
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.brand-card {
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-white);
+}
+
+.brand-card img {
+    width: 100%;
+    max-width: 165px;
+    height: 68px;
+    object-fit: contain;
+}
+
+/* PASOS DE COMPRA */
+
+.step-card span {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--color-red);
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+/* DISTRITOS */
+
+.districts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.districts-grid a {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    padding: 12px 15px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    background: var(--color-white);
+    font-weight: 600;
+    transition:
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.districts-grid a:hover {
+    color: var(--color-red);
+    border-color: var(--color-red);
+}
+
+/* PREGUNTAS FRECUENTES */
+
+#preguntas-frecuentes details {
+    max-width: 850px;
+    margin: 12px auto;
+    padding: 18px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-white);
+}
+
+#preguntas-frecuentes summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#preguntas-frecuentes details p {
+    margin-bottom: 0;
+    color: var(--color-gray);
+}
+
+/* CONTACTO */
+
+.contact-section {
+    text-align: center;
+    color: var(--color-white);
+    background: var(--color-black);
+}
+
+.contact-section h2 {
+    color: var(--color-white);
+}
+
+.contact-section > p {
+    color: #e0e0e0;
+}
+
+.contact-section .button {
+    margin-top: 10px;
+}
+
+/* PIE DE PAGINA */
+
+.site-footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    text-align: center;
+    color: #e5e5e5;
+    background: #101010;
+}
+
+.site-footer p {
+    margin: 8px 0;
+}
+
+.site-footer a {
+    color: var(--color-gold);
+    font-weight: 700;
+}
+
+/* RESPONSIVE: TABLET */
+
+@media (max-width: 800px) {
+    .benefits-grid,
+    .services-grid,
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .districts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+/* RESPONSIVE: CELULARES */
+
+@media (max-width: 520px) {
+    .site-header {
+        min-height: 72px;
+    }
+
+    .site-header img {
+        width: 145px;
+    }
+
+    .hero {
+        padding: 52px 20px 56px;
+
+        /* Ajusta el encuadre de la imagen en celular */
+        background-position: 58% center;
+    }
+
+    .hero h1 {
+        letter-spacing: -0.5px;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .button {
+        width: 100%;
+        min-height: 52px;
+    }
+
+    .benefits-grid,
+    .services-grid,
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .brands-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .brand-card {
+        min-height: 95px;
+        padding: 12px;
+    }
+
+    .brand-card img {
+        height: 58px;
+    }
+
+    .districts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .benefit-card,
+    .service-card,
+    .step-card {
+        padding: 22px 18px;
+    }
+}
+
+/* RESPETAR PREFERENCIAS DE MOVIMIENTO */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
