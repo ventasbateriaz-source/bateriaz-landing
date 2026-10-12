@@ -1,113 +1,58 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://bateriaz.online/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-comas/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-san-juan-de-lurigancho/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-surco/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-san-borja/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-surquillo/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-barranco/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-san-isidro/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-miraflores/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-lince/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-jesus-maria/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-magdalena-del-mar/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-los-olivos/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-san-martin-de-porres/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-la-victoria/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-brena/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-cercado-de-lima/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://bateriaz.online/delivery-callao/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
-
 </urlset>
+
